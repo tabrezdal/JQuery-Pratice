@@ -8,18 +8,45 @@
     <title>JQuery Practice</title>
 </head>
 <body>
+    <h1 class="topic">Mouse Enter</h1>
+    <ul id="topic-listing">
+        <li class="active">
+            click()
+        </li>
+        <li>
+            dblclick()
+        </li>
+        <li>
+            contextmenu()
+        </li>
+        <li>
+            mouseenter()
+        </li>
+        <li>
+            mouseleave()
+        </li>
+        <li>
+            mousedown()
+        </li>
+        <li>
+            mouseup()
+        </li>
+    </ul>
     <div class="main-div">
-        <h3>
-            Hey Tabrez 👋
-        </h3>
-        <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum sit deserunt corporis laborum non consequatur vero. Qui eum asperiores, reiciendis consequatur, dolor porro natus numquam alias vero iusto animi cupiditate.
-        </p>
+        <ul id="listing">
+            <li>Tom & Jerry</li>
+            <li>Scooby-doo</li>
+            <li>Micky Mouse</li>
+            <li>Super Man</li>
+            <li>Road Runner</li>
+        </ul>
     </div>
+    <button>Run</button>
     <script src="/jquery.js"></script>
     <script>
-        $(document).ready(function(){
-            alert("Jquery Plugged In!");
+        $('button').click(function(){
+        var a = $('#listing').html();
+        alert(a);
         })
     </script>
 </body>

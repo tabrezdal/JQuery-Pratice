@@ -1,5 +1,41 @@
+body{
+    padding: 10px 20px;
+}
+
 .main-div{
     background-color: aliceblue;
     padding: 20px;
-    margin: 50px;
+    margin-bottom: 20px;
+}
+
+.topic{
+    text-align: center;    
+}
+
+#topic-listing{
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#topic-listing li{
+    margin: 0 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#topic-listing .active{
+    font-weight: 600;
+    color:darkviolet;
+}
+
+button{
+    padding: 10px 20px;
+    outline: none;
+    border:none;
+    background-color: darkviolet;
+    color: #fff;
+    border-radius: 10px;
+    font-weight: 600;
 }
