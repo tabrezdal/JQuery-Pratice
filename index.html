@@ -8,18 +8,36 @@
     <title>JQuery Practice</title>
 </head>
 <body>
+    <h1 class="topic">Get Events</h1>
+    <ul id="topic-listing">
+        <li class="active">
+            text()
+        </li>
+        <li>
+            html()
+        </li>
+        <li>
+            attr()
+        </li>
+        <li>
+            val()
+        </li>
+    </ul>
     <div class="main-div">
         <h3>
             Hey Tabrez 👋
         </h3>
         <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum sit deserunt corporis laborum non consequatur vero. Qui eum asperiores, reiciendis consequatur, dolor porro natus numquam alias vero iusto animi cupiditate.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto consequuntur veritatis perspiciatis culpa id corrupti, facilis voluptate nostrum dolore at, obcaecati ex, deleniti atque ratione aut quisquam autem facere! In.
         </p>
     </div>
+    <button>Run</button>
     <script src="/jquery.js"></script>
     <script>
         $(document).ready(function(){
-            alert("Jquery Plugged In!");
+            $('button').click(function(){
+                $('h3').text('Hey, TZ ✨');
+            })
         })
     </script>
 </body>
