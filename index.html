@@ -13,10 +13,10 @@
         <li>
             focus()
         </li>
-        <li class="active">
+        <li>
             blur()
         </li>
-        <li>
+        <li class="active">
             change()
         </li>
         <li>
@@ -51,6 +51,7 @@
         </form>
     </div>
     <button>Run</button>
+    <div id="selected-item"></div>
     <script src="/jquery.js"></script>
     <script>
         $(document).ready(function(){
@@ -60,6 +61,11 @@
         
             $('input, textarea, select').blur(function(){
                 $(this).css('background-color', '');
+            });
+
+            $('select').change(function(){
+                var x = $('select').val();
+                $('#selected-item').html(x);
             });
         })
     </script>
