@@ -10,10 +10,10 @@
 <body>
     <h1 class="topic">Get Events</h1>
     <ul id="topic-listing">
-        <li class="active">
+        <li>
             text()
         </li>
-        <li>
+        <li class="active">
             html()
         </li>
         <li>
@@ -34,8 +34,8 @@
     <script src="/jquery.js"></script>
     <script>
         $(document).ready(function(){
-            $('.main-div').mouseenter(function(){
-                console.log($('h3').text());
+            $('.main-div').mousedown(function(){
+                console.log($(this).html());
             })
         })
     </script>
