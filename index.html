@@ -16,10 +16,10 @@
         <li>
             blur()
         </li>
-        <li class="active">
+        <li>
             change()
         </li>
-        <li>
+        <li  class="active">
             select()
         </li>
         <li>
@@ -38,20 +38,10 @@
             <div class="form-elements">
                 <textarea name="" id="" cols="30" rows="10"></textarea>
             </div>
-            <div class="form-elements">
-                <select>
-                    <option value="apple">Apple</option>
-                    <option value="orange">Orange</option>
-                    <option value="banana">Banana</option>
-                    <option value="pineapple">Pineapple</option>
-                    <option value="cherry">Cherry</option>
-                </select>
-            </div>
             <button type="submit">Submit</button>
         </form>
     </div>
     <button>Run</button>
-    <div id="selected-item"></div>
     <script src="/jquery.js"></script>
     <script>
         $(document).ready(function(){
@@ -66,6 +56,10 @@
             $('select').change(function(){
                 var x = $('select').val();
                 $('#selected-item').html(x);
+            });
+
+            $('input, textarea').select(function(){
+                $(this).css('background-color', 'orange');
             });
         })
     </script>
