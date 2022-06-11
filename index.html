@@ -13,10 +13,10 @@
         <li>
             text()
         </li>
-        <li class="active">
+        <li>
             html()
         </li>
-        <li>
+        <li class="active">
             attr()
         </li>
         <li>
@@ -36,7 +36,7 @@
     <script>
         $(document).ready(function(){
             $('button').click(function(){
-                $('p').html('This is <b>bold</b> text.');
+                $('p').attr('name', 'description');
              })
         })
 
