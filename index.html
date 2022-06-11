@@ -13,10 +13,10 @@
         <li>
             click()
         </li>
-        <li class="active">
+        <li>
             dblclick()
         </li>
-        <li>
+        <li class="active">
             contextmenu()
         </li>
         <li>
@@ -52,6 +52,11 @@
         $('.main-div').dblclick(function(){
             $(this).css('color', 'teal')
         })
+
+        $('.main-div').contextmenu(function(){
+            $(this).css('background-color', 'red')
+        })
+
     </script>
 </body>
 </html>
