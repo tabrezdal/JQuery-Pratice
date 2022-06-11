@@ -22,10 +22,10 @@
         <li>
             mouseenter()
         </li>
-        <li class="active">
+        <li>
             mouseleave()
         </li>
-        <li>
+        <li class="active">
             mousedown()
         </li>
         <li>
@@ -64,6 +64,11 @@
         $('.main-div').mouseleave(function(){
             $(this).css('background-color', 'yellow')
         })
+        
+        $('.main-div').mousedown(function(){
+            $(this).css('background-color', '#f846da')
+        })
+
 
     </script>
 </body>
