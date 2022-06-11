@@ -19,10 +19,10 @@
         <li>
             change()
         </li>
-        <li  class="active">
+        <li>
             select()
         </li>
-        <li>
+        <li class="active">
             submit()
         </li>
     </ul>
@@ -60,6 +60,10 @@
 
             $('input, textarea').select(function(){
                 $(this).css('background-color', 'orange');
+            });
+
+            $('form').submit(function(){
+                alert("Form Submitted Successfully!!!!")
             });
         })
     </script>
