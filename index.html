@@ -13,10 +13,10 @@
         <li>
             keypress()
         </li>
-        <li class="active">
+        <li>
            keydown()
         </li>
-        <li>
+        <li class="active">
             keyup()
         </li>
     </ul>
@@ -34,6 +34,10 @@
     <script>
         $('body').keydown(function(){
             $(this).css('background-color', 'orange');
+        })
+        
+        $('body').keyup(function(){
+            $(this).css('background-color', 'skyblue');
         })
     </script>
 
