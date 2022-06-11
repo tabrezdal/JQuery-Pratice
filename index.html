@@ -10,10 +10,10 @@
 <body>
     <h1 class="topic">Mouse Enter</h1>
     <ul id="topic-listing">
-        <li class="active">
+        <li>
             click()
         </li>
-        <li>
+        <li class="active">
             dblclick()
         </li>
         <li>
@@ -47,6 +47,10 @@
         $('button').click(function(){
         var a = $('#listing').html();
         alert(a);
+        })
+
+        $('.main-div').dblclick(function(){
+            $(this).css('color', 'teal')
         })
     </script>
 </body>
