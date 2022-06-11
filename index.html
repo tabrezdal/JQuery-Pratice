@@ -16,25 +16,42 @@
         <li>
             html()
         </li>
-        <li class="active">
+        <li>
             attr()
         </li>
-        <li>
+        <li class="active">
             val()
         </li>
     </ul>
-    <div class="main-div test-class" id="test">
-        <h3>
-            Hey Tabrez 👋
-        </h3>
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto consequuntur veritatis perspiciatis culpa id corrupti, facilis voluptate nostrum dolore at, obcaecati ex, deleniti atque ratione aut quisquam autem facere! In.
-        </p>
+    <div class="main-div"> 
+    <form action="">
+        <div class="form-elements">
+            <input type="text" id="name" placeholder="name">
+        </div>
+        <div class="form-elements">
+            <input type="email" id="email" placeholder="email">
+        </div>
+        <div class="form-elements" id="description">
+            <textarea name="" id="description" cols="30" rows="10"></textarea>
+        </div>
+        <div class="form-elements">
+            <select>
+                <option value="apple">Apple</option>
+                <option value="orange">Orange</option>
+                <option value="banana">Banana</option>
+                <option value="pineapple">Pineapple</option>
+                <option value="cherry">Cherry</option>
+            </select>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
     </div>
     <script src="/jquery.js"></script>
     <script>
         $(document).ready(function(){
-            console.log( $('#test').attr('class'));
+            $('form').submit(function(){
+                alert("Name: " + $('#name').val() + "  Email: " + $('#email').val()  + "  Description: " + $('textarea').val() + "  Fruit: " + $('select').val() );
+            })
         })
     </script>
 </body>
