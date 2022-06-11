@@ -8,19 +8,57 @@
     <title>JQuery Practice</title>
 </head>
 <body>
+    <h1 class="topic">Form Events</h1>
+    <ul id="topic-listing">
+        <li class="active">
+            focus()
+        </li>
+        <li>
+            blur()
+        </li>
+        <li>
+            change()
+        </li>
+        <li>
+            select()
+        </li>
+        <li>
+            submit()
+        </li>
+    </ul>
     <div class="main-div">
-        <h3>
-            Hey Tabrez 👋
-        </h3>
-        <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum sit deserunt corporis laborum non consequatur vero. Qui eum asperiores, reiciendis consequatur, dolor porro natus numquam alias vero iusto animi cupiditate.
-        </p>
+        <h2>My Form</h2>
+        <form action="">
+            <div class="form-elements">
+                <input type="text" id="name">
+            </div>
+            <div class="form-elements">
+                <input type="text">
+            </div>
+            <div class="form-elements">
+                <textarea name="" id="" cols="30" rows="10"></textarea>
+            </div>
+            <div class="form-elements">
+                <select>
+                    <option value="apple">Apple</option>
+                    <option value="orange">Orange</option>
+                    <option value="banana">Banana</option>
+                    <option value="pineapple">Pineapple</option>
+                    <option value="cherry">Cherry</option>
+                </select>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
     </div>
+    <button>Run</button>
     <script src="/jquery.js"></script>
     <script>
         $(document).ready(function(){
-            alert("Jquery Plugged In!");
+            $('input, textarea, select').focus(function(){
+                $(this).css('background-color', 'skyblue');
+            });
         })
     </script>
+
 </body>
 </html>
