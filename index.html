@@ -10,10 +10,10 @@
 <body>
     <h1 class="topic">Window Events</h1>
     <ul id="topic-listing">
-        <li class="active">
+        <li>
             scroll()
         </li>
-        <li>
+        <li class="active">
             resize()
         </li>
     </ul>
@@ -56,8 +56,8 @@
     <script src="/jquery.js"></script>
     <script>
         $(document).ready(function(){
-           $(window).scroll(function(){
-               console.log("You are scrolling");
+           $(window).resize(function(){
+               console.log("You are resizing window!");
            })
         })
     </script>
