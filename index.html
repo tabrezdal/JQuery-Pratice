@@ -10,10 +10,10 @@
 <body>
     <h1 class="topic">Key Events</h1>
     <ul id="topic-listing">
-        <li class="active">
+        <li>
             keypress()
         </li>
-        <li>
+        <li class="active">
            keydown()
         </li>
         <li>
@@ -32,8 +32,8 @@
     <button>Run</button>
     <script src="/jquery.js"></script>
     <script>
-        $('body').keypress(function(){
-            $(this).css('background-color', 'teal');
+        $('body').keydown(function(){
+            $(this).css('background-color', 'orange');
         })
     </script>
 
