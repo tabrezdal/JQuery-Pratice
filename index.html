@@ -10,10 +10,10 @@
 <body>
     <h1 class="topic">Form Events</h1>
     <ul id="topic-listing">
-        <li class="active">
+        <li>
             focus()
         </li>
-        <li>
+        <li class="active">
             blur()
         </li>
         <li>
@@ -56,6 +56,10 @@
         $(document).ready(function(){
             $('input, textarea, select').focus(function(){
                 $(this).css('background-color', 'skyblue');
+            });
+        
+            $('input, textarea, select').blur(function(){
+                $(this).css('background-color', '');
             });
         })
     </script>
