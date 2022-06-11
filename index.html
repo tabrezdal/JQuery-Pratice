@@ -13,17 +13,17 @@
         <li>
             text()
         </li>
-        <li class="active">
+        <li>
             html()
         </li>
-        <li>
+        <li class="active">
             attr()
         </li>
         <li>
             val()
         </li>
     </ul>
-    <div class="main-div">
+    <div class="main-div test-class" id="test">
         <h3>
             Hey Tabrez 👋
         </h3>
@@ -34,9 +34,7 @@
     <script src="/jquery.js"></script>
     <script>
         $(document).ready(function(){
-            $('.main-div').mousedown(function(){
-                console.log($(this).html());
-            })
+            console.log( $('#test').attr('class'));
         })
     </script>
 </body>
