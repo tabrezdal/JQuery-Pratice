@@ -1,5 +1,22 @@
 .main-div{
     background-color: aliceblue;
     padding: 20px;
-    margin: 50px;
+}
+
+body{
+    padding: 20px;
+}
+
+.topic{
+    text-align: center;
+    text-transform: uppercase;
+}
+button{
+    padding: 10px 20px;
+    Color: #fff;
+    background-color: blueviolet;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    margin-top: 20px;
 }
